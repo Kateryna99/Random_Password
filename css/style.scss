@@ -1,0 +1,152 @@
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-copy-files:before {
+  content: "\e900";
+
+}
+
+body{
+  font-family: 'Rubik',sans-serif;
+ font-size: 20px;
+
+  background-color: rgba(239, 100, 26, 0.63);
+
+  text-align: center;
+
+}
+
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.random-password {
+  width: 100%;
+  &__container {
+    max-width: 460px;
+    width: 100%;
+
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    border-radius: 10px;
+    padding: 20px;
+
+    background-color: rgba(255, 255, 255, 0.21);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__header {
+  }
+
+  &__title {
+    font-size: 25px;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  &__block {
+  }
+
+  &__icon {
+    font-size: 30px;
+    cursor: pointer;
+
+  }
+  &__input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+
+  &__footer {
+  }
+
+  &__button {
+    padding: 10px 30px;
+
+    background-color: #181717;
+    color: white;
+
+    border-radius: 10px;
+
+    transition: transform 0.5s ease;
+
+    &:hover{
+      box-shadow: 0 5px 10px rgba(360,360,360,0.3);
+      transform: scale(1.1);
+    }
+  }
+
+  &__message {
+  }
+}
+
+.icon-copy-files {
+  color: #706d6d;
+  font-weight: 700;
+  &:hover{
+   color: black;
+  }
+}
+
+.message {
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+
+  max-width: 300px;
+  width: 100%;
+  height: 40px;
+
+   border-radius: 10px;
+  transform: translate(110%,0);
+  background-color: rgba(42, 210, 42, 0.42);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: transform 0.5s ease;
+  &__text {
+  }
+
+  &--active{
+    transform: translate(0,0);
+  }
+}
